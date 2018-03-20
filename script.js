@@ -76,13 +76,13 @@ if(document.body.ontouchstart !== undefined){
     }
 }
 
-//画笔橡皮擦按钮
+//橡皮擦按钮
 eraser.onclick = function(){
     eraserEnabled = true
     eraser.classList.add('active')
     brush.classList.remove('active')
 }
-
+//画笔按钮
 brush.onclick = function(){
     eraserEnabled = false
     brush.classList.add('active')
@@ -136,7 +136,7 @@ function setCanvasSize(canvas){
     canvas.width = document.documentElement.clientWidth
     canvas.height = document.documentElement.clientHeight
 }
-
+//绘制线条
 function drawLine(x1, y1, x2, y2, lineWidth, lineColor){
     ctx.beginPath()
     ctx.moveTo(x1, y1)
@@ -146,7 +146,7 @@ function drawLine(x1, y1, x2, y2, lineWidth, lineColor){
     ctx.stroke()
     ctx.closePath()
 }
-
+//画圆
 function drawCircle(x1, y1, radius){
     ctx.beginPath()
     ctx.arc(x1, y1, radius, 0, Math.PI*2, true)
