@@ -14,7 +14,6 @@ canvas{
     position: fixed;
     right: 15px;
     top: 15px;
-    transition: all 0.3s;
 }
 .action2{
     position: fixed;
@@ -26,6 +25,7 @@ svg{
     height: 1.5em;
     display: inline-block;
     padding: 0px 5px;
+    transition: all 0.3s;
 }
 
 .action1 > svg.active{
