@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
+maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>我的画板</title>
+</head>
+<body>
+    <canvas id="graph"></canvas>
+    <div class="action1">
+        <svg id="eraser" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id="brush" class="icon active" aria-hidden="true">
+            <use xlink:href="#icon-17brush"></use>
+        </svg>
+    </div>
+    <div class="action2">
+        <svg id="clearAll" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-lajixiang"></use>
+        </svg>
+        <svg id="download" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-xiazai"></use>
+        </svg>
+    </div>
+    <div class="color">
+        <div id="colorBlack" class="active"></div>
+        <div id="colorRed"></div>        
+        <div id="colorGreen"></div>
+        <div id="colorBlue"></div>
+    </div>
+    
+    
+    
+    <script src="./script.js"></script>
+    <script src="//at.alicdn.com/t/font_597230_mle9ih3j3c6av2t9.js"></script>
+</body>
+</html>

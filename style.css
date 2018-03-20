@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+canvas{
+    background-color: white;
+    display: block;
+}
+
+.action1{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    transition: all 0.3s;
+}
+.action2{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+svg{
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.action1 > svg.active{
+    transform: scale(1.2);
+    fill: red;
+}
+
+.color{
+    width: 20px;
+    position: fixed;
+    top: 60px;
+    right: 22px;
+}
+.color > div{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+.color > div.active{
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+}
+.color > #colorRed{
+    background-color: red;
+}
+.color > #colorGreen{
+    background-color: green;
+}
+.color > #colorBlue{
+    background-color: blue;
+}
+.color > #colorBlack{
+    background-color: black;
+}
