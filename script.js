@@ -13,9 +13,10 @@ window.onresize = function(){
 }
 
 //特性检测
-if(document.body.ontouchstart != undefined){
+if(document.body.ontouchstart !== undefined){
     //触屏设备
     canvas.ontouchstart = function(tch){
+        console.log(1)
         var x = tch.touches[0].clientX
         var y = tch.touches[0].clientY
         using = true
@@ -27,6 +28,7 @@ if(document.body.ontouchstart != undefined){
         }
     }
     canvas.ontouchmove = function(tch){
+        console.log(2)
         var x = tch.touches[0].clientX
         var y = tch.touches[0].clientY
         if(using == true){
